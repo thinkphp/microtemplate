@@ -6,7 +6,7 @@ A micro-template engine on JavaScript.
 Syntax
 ------
 
-* template(tmp, ob)
+* template(tmp, object)
 
 
 Example
