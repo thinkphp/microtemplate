@@ -3,6 +3,12 @@ microtemplate
 
 A micro-template engine on JavaScript.
 
+Syntax
+------
+
+* template(tmp, ob)
+
+
 Example
 --------
 
