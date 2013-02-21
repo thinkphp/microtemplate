@@ -3,7 +3,7 @@ microtemplate
 
 A micro-template engine on JavaScript.
 
-#Example
+Example
 --------
 
        #HTML  
