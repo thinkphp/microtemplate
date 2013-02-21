@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>micro-template</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+<h1>micro-template</h1>
+<p id="title"></p>
+<script type="text/javascript" src="src/microtemplate.js"></script>
+<script type="text/javascript">
+
+      var tmp = 'This {project} presents a very {compact} micro-templating {solution} creating for learning purposes';
+
+      var ob = {
+             'project': 'MooTools',
+             'compact': "extra",
+             'solution': "miss"  
+      };
+
+      var title = document.getElementById("title");
+
+          title.innerHTML = template(tmp, ob)  
+</script>
+</body>
+</html>
+
+
