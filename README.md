@@ -16,10 +16,7 @@ Example
        <p id="title"></p>
 ```
 
-```js
-       <script type="text/javascript" src="src/microtemplate.js"></script>
-       <script type="text/javascript">
-
+```js       
        var tmp = 'This {project} presents a very {compact} micro-templating {solution} creating for learning purposes';
 
        var ob = {
