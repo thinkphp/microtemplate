@@ -12,10 +12,11 @@ Syntax
 Example
 --------
 
-       #HTML  
+```html
        <p id="title"></p>
+```
 
-       #JS 
+```js
        <script type="text/javascript" src="src/microtemplate.js"></script>
        <script type="text/javascript">
 
@@ -30,3 +31,4 @@ Example
        var title = document.getElementById("title");
 
            title.innerHTML = template(tmp, ob)  
+```
