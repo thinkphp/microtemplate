@@ -4,12 +4,50 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 <title>micro-template</title>
 <style type="text/css">
+pre, code {
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  overflow: auto;
+  font-family: courier;
+  background: ghostwhite;
+  border: 1px solid #ddd;
+}
+
+code {
+  padding: 2px 5px;
+}
+
+pre code {
+  padding: 0;
+  margin-bottom: 0;
+  border: 0;
+}
+
+pre:before,
+pre:after {
+  content: '';
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+
+}
+
+pre:before {
+  border-top: 1px solid hsla( 0, 0%, 100%, 1 );
+  top: 0;
+}
+
+pre:after {
+  border-top: 1px solid hsla( 0, 0%, 0%, 0.05 );
+  bottom: 0px;
+}
 </style>
 </head>
 <body>
 <h1>micro-template</h1>
 <p id="title"></p>
-<script type="text/javascript" src="src/microtemplate.js"></script>
+<script type="text/javascript" src="src/microtemplate-min.js"></script>
 <script type="text/javascript">
 
       var tmp = 'This {project} presents a very {compact} micro-templating {solution} creating for learning purposes';
@@ -24,6 +62,20 @@
 
           title.innerHTML = template(tmp, ob)  
 </script>
+
+<pre><code>
+      var tmp = 'This {project} presents a very {compact} micro-templating {solution} creating for learning purposes';
+
+      var ob = {
+             'project': 'MooTools',
+             'compact': "extra",
+             'solution': "miss"  
+      };
+
+      var title = document.getElementById("title");
+
+          title.innerHTML = template(tmp, ob)  
+</code></pre>
 </body>
 </html>
 

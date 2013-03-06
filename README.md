@@ -8,7 +8,6 @@ Syntax
 
 * template(tmp, object)
 
-
 Example
 --------
 
@@ -16,7 +15,7 @@ Example
        <p id="title"></p>
 ```
 
-```js       
+```js
        var tmp = 'This {project} presents a very {compact} micro-templating {solution} creating for learning purposes';
 
        var ob = {
@@ -27,5 +26,5 @@ Example
 
        var title = document.getElementById("title");
 
-           title.innerHTML = template(tmp, ob)  
+           title.innerHTML = template(tmp, ob);
 ```
